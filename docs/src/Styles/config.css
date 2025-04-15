@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #3498db;
+    --background-color: #cabdbd;
+    --header-background: #6969691a;
+    --background-button:#3498db;
+    --background-button-hover: #0056b3;
+    --background-button-save: #2ecc71;
+    --background-button-save-hover: #27ae60;
+    --background-button-delete: #e74c3c;
+    --background-button-delete-hover: #c0392b;
+    --text-color: #333;
+    --font-family: 'Arial, sans-serif';
+    --font-size: 16px;
+    --padding: 10px;
+    --margin: 10px;
+}
+
+
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Ensures items are spaced evenly */
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 10px;
+}
+
+.col {
+  flex: 1 1 calc(33.33% - 10px); /* Three columns with space for the gap */
+  min-width: 150px;
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+  text-align: center; /* Centers text inside each column */
+} 

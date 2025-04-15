@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Verificador de Entregas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Verificador de Entregas - Calcule o valor total de suas entregas com facilidade.">
+  <meta name="author" content="Pedro Gentil">
+  <meta name="keywords" content="verificador, entregas, cálculo, taxas, histórico">
+  <meta name="robots" content="index, follow">
+  <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE"> -->
+  <link rel="icon" href="./src/assets/logo/Icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="./src/assets/logo/AppleTouchIcon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="./src/Styles/Styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img class=" logo" src="./src/assets/logo/Icon.png" alt="Logo Verificador de Entregas">
+      <h1>Verificador de Entregas</h1>
+    </div>
+    <div>
+      <div class="itens">
+      <h3>Itens</h3>
+      <input type="number" step="0.01" id="valorItem" placeholder="Valor item" onkeypress="if(event.key === 'Enter') adicionarItem()">
+      <button onclick="adicionarItem()">Adicionar Item</button>
+      <div id="listaItens"></div>
+      </div>
+
+      <div class="taxas">
+      <h3>Taxas de Tele</h3>
+      <input type="number" step="0.01" id="valorTele" placeholder="Valor tele" onkeypress="if(event.key === 'Enter') adicionarTele()">
+      <button onclick="adicionarTele()">Adicionar Tele</button>
+      <div id="listaTele"></div>
+      </div>  
+
+      <div class="totalNotas">
+      <h3>Total da nota</h3>
+      <input type="number" step="0.01" id="valorIntegral" placeholder="Valor Total" onkeypress="if(event.key === 'Enter') adicionarIntegral()">
+      <button onclick="adicionarIntegral()">Adicionar Total</button>
+      <div id="listaIntegral"></div>
+      </div>
+
+      <div class="subtracao">
+      <h3>Subtração</h3>  
+      <input type="number" step="0.01" id="valorSubtracao" placeholder="Valor para diminuir" onkeypress="if(event.key === 'Enter') subtrairDoIntegral()">
+      <button class="btSubtrai"subtrairDoIntegral()">Subtrair</button>
+      <div id="listaSubtracao"></div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div>
+      <button class="btLimpar" onclick="limpar()">Limpar</button>
+      <button class="btCalcular" onclick="calcular()">Calcular</button>
+      <button class="btSalvar" onclick="salvar()">Salvar</button>
+      <div class="result" id="resultado"></div>
+      <div class="historico" id="historico">
+        <h3>Histórico de Lançamentos</h3>
+        <div id="listaHistorico"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./src/scripts.js"></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Service Worker registrado com sucesso!"))
+        .catch(error => console.log("Erro ao registrar Service Worker:", error));
+    }
+  </script>
+
+  <footer>
+  <p>&copy; 2025 Verificador de Entregas. Todos os direitos reservados para Pedro Gentil</p>
+  <p> Desenvolvido com amor e dedicação pelo jumenthu.</p>
+  <p>Versão 1.2.0</p>
+  <p>Data de lançamento: Em Breve</p> 
+  <button class = "jogo_joao" onclick="window.open('http://slither.com/io', '_blank');">Jogo joao</button>
+  </footer>
+
+</body>
+
+</html>

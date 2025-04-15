@@ -1,0 +1,177 @@
+@import './config.css';
+
+body {
+    font-family: Arial, sans-serif;
+    padding: var(--body-padding);
+    background: var(--background-color);
+  }
+
+  h1 {
+    color: var(--text-color);
+  }
+
+  input,
+  button {
+    padding: 10px;
+    margin: 5px;
+  }
+  input[type="number"] {
+    width: 75px;
+  }
+ 
+  h3 {
+    margin-top: 20px;
+  }
+
+  .result,
+  .historico {
+    margin-top: 20px;
+    background: var(--header-background);
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .historico-entry {
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  header {
+    background: var(--header-background);
+    color: var(--text-color);
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    border-radius: 5px;
+    margin-top: 20px;
+    gap: 10px; /* Add spacing between elements */
+  }
+  header   button {
+    background: var(--background-button);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  header button:hover {
+    background: var(--background-button-hover);
+  }
+  .btSubtrai{
+    background: var(--background-button);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .itens,
+  .taxas,
+  .totalNotas,
+  .subtracao {
+    display: inline-block;
+    vertical-align: top;
+    width: 22%; /* Adjusted width to fit all four divs side by side */
+    margin-right: 1%; /* Reduced margin to ensure proper alignment */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column; /* Stack logo and title vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .logo img {
+    height: 10rem; /* Adjust the size of the image */
+    margin-bottom: 10px; /* Add spacing between the image and the title */
+  }
+
+  .logo h1 {
+    margin: 0;
+    font-size: 1.5rem; 
+    text-align: center; /* Align text to the center */
+  }
+
+  
+
+
+  section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e9ecef;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  } 
+
+  section button {
+    background: var(--background-button);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  section button:hover {
+    background: var(--background-button-hover);
+  }
+  section .btLimpar{
+    background: var(--background-button-delete);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  section .btLimpar:hover{
+    background: var(--background-button-delete-hover);
+  }
+  section .btSalvar{
+    background: var(--background-button-save);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  section .btSalvar:hover{
+    background: var(--background-button-save-hover);
+  }
+  .btExcluir{
+    background: var(--background-button-delete);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .btExcluir:hover{
+    background: var(--background-button-delete-hover);
+  }
+
+  
+  footer {
+    margin-top: 50rem;
+    padding: 15px;
+    background: #e9ecef;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    bottom: 0;
+    left: 0;
+    width: 98%;
+  }
+  footer p{
+    margin: 0;
+    font-size: 12px; 
+    text-align: center; /* Align text to the center */
+  }
+
+  footer .jogo_joao {
+    margin-left: auto;
+  }
