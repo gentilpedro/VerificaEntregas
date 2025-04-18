@@ -160,7 +160,7 @@ function mostrarHistorico() {
             <p><strong>Itens:</strong> R$ ${entry.totalItens.toFixed(2)} <br> ${entry.itens.map(v => `R$ ${v.toFixed(2)}`).join(', ')}</p>
             <p><strong>Taxas de Tele:</strong> R$ ${entry.totalTele.toFixed(2)} <br> ${entry.taxas.map(v => `R$ ${v.toFixed(2)}`).join(', ')}</p>
             <p><strong>Total da nota:</strong> R$ ${entry.totalIntegral.toFixed(2)} <br> ${entry.integral.map(v => `R$ ${v.toFixed(2)}`).join(', ')}</p>
-            <p><strong>Totalo em dinheiro;</strong> R$ ${entry.novoTotalIntegral.toFixed(2)}</p>
+            <p><strong>Total em dinheiro;</strong> R$ ${entry.novoTotalIntegral.toFixed(2)}</p>
             <p><strong>Diferença:</strong> R$ ${entry.diferenca.toFixed(2)} - <span style="color: ${entry.sucesso ? 'green' : 'red'};">${entry.sucesso ? 'OK' : 'Erro'}</span></p>
             <button class ="btExcluir" onclick="excluirHistorico(${index})">Excluir</button>
         `;
